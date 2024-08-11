@@ -12,7 +12,7 @@ public class WhenYouCreateAGrid {
 
     private static final String NEW_LINE = System.getProperty("line.separator");
 
-    public static final String EMPTY_GRID = "......" + NEW_LINE + "......" + NEW_LINE + "......" + NEW_LINE + "......" + NEW_LINE + "......" + NEW_LINE + "......" + NEW_LINE;
+    public static final String EMPTY_GRID = "..." + NEW_LINE + "..." + NEW_LINE + "..." + NEW_LINE;
 
     @Test
     public void aNewGridShouldBeEmpty() {
@@ -23,9 +23,9 @@ public class WhenYouCreateAGrid {
     @Test
     public void shouldBeAbleToSeedAGridWithAString() {
 
-        String gridContents = "......" + NEW_LINE + "......" + NEW_LINE + "......" + NEW_LINE + "......" + NEW_LINE + "......" + NEW_LINE + "......" + NEW_LINE;
+        String gridContents = "..." + NEW_LINE + "..." + NEW_LINE + "...";
 
-        String expectedPrintedGrid = "......" + NEW_LINE + "......" + NEW_LINE + "......" + NEW_LINE + "......" + NEW_LINE + "......" + NEW_LINE + "......" + NEW_LINE;
+        String expectedPrintedGrid = "..." + NEW_LINE + "..." + NEW_LINE + "..." + NEW_LINE;
 
         Grid grid = new Grid(gridContents);
         assertThat(grid.toString(), is(expectedPrintedGrid));
