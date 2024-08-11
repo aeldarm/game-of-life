@@ -23,9 +23,9 @@ public class WhenYouCreateAGrid {
     @Test
     public void shouldBeAbleToSeedAGridWithAString() {
 
-        String gridContents = "..." + NEW_LINE + "..." + NEW_LINE + "...";
+        String gridContents = "......" + NEW_LINE + "......" + NEW_LINE + "......" + NEW_LINE + "......" + NEW_LINE + "......" + NEW_LINE + "......" + NEW_LINE;
 
-        String expectedPrintedGrid = "..." + NEW_LINE + "..." + NEW_LINE + "..." + NEW_LINE;
+        String expectedPrintedGrid = "......" + NEW_LINE + "......" + NEW_LINE + "......" + NEW_LINE + "......" + NEW_LINE + "......" + NEW_LINE + "......" + NEW_LINE;
 
         Grid grid = new Grid(gridContents);
         assertThat(grid.toString(), is(expectedPrintedGrid));
